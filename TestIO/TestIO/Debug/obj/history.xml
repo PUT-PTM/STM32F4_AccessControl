@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<history>
+   <processor signature="arm-none-eabi-gcc noversion nomachine -mcpu=cortex-m4 -mthumb -Wall -ffunction-sections -g -O0 -flto -fno-builtin -c -DSTM32F407VG -DSTM32F4XX -DUSE_STDPERIPH_DRIVER -D__ASSEMBLY__ -I..\..\..\..\..\Users\Piotrek\Desktop\PTM\TestIO\cmsis -I..\..\..\..\..\Users\Piotrek\Desktop\PTM -I..\..\..\..\..\Users\Piotrek\Desktop\PTM\TestIO\cmsis_lib\include -I..\..\..\..\..\Users\Piotrek\Desktop\PTM\TestIO\delay -I..\..\..\..\..\Users\Piotrek\Desktop\PTM\TestIO\cmsis_lib -I..\..\..\..\..\Users\Piotrek\Desktop\PTM\TestIO\LCD -I..\..\..\..\..\Users\Piotrek\Desktop\PTM\TestIO -I..\..\..\..\..\Users\Piotrek\Desktop\PTM\TestIO\cmsis_boot">
+      <target file="stm32f4xx_gpio.o" lastModified="1451cfae2d2">
+         <source file="..\..\..\cmsis_lib\source\stm32f4xx_gpio.c" lastModified="1419d708110"/>
+      </target>
+      <target file="system_stm32f4xx.o" lastModified="1451cfae333">
+         <source file="..\..\..\cmsis_boot\system_stm32f4xx.c" lastModified="1419d763600"/>
+      </target>
+      <target file="startup_stm32f4xx.o" lastModified="1451cfae03e">
+         <source file="..\..\..\cmsis_boot\startup\startup_stm32f4xx.c" lastModified="1419d703ac0"/>
+      </target>
+      <target file="lcd_hd44780.o" lastModified="1451d1e05ae">
+         <source file="..\..\..\LCD\lcd_hd44780.c" lastModified="1451d1de321"/>
+      </target>
+      <target file="main.o" lastModified="1451d3c0968">
+         <source file="..\..\..\main.c" lastModified="1451d3c06ff"/>
+      </target>
+      <target file="delay.o" lastModified="1451cfadfec">
+         <source file="..\..\..\delay\delay.c" lastModified="144c5fc80d9"/>
+      </target>
+      <target file="stm32f4xx_rcc.o" lastModified="1451cfae17b">
+         <source file="..\..\..\cmsis_lib\source\stm32f4xx_rcc.c" lastModified="1419d705230"/>
+      </target>
+      <target file="IOToggle.o" lastModified="1451cfae387">
+         <source file="..\..\..\example\IOToggle.c" lastModified="144b609de80"/>
+      </target>
+      <target file="misc.o" lastModified="1451cfae3df">
+         <source file="..\..\..\cmsis_lib\source\misc.c" lastModified="144c0a5df60"/>
+      </target>
+   </processor>
+</history>
