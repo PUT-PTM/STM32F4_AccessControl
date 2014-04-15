@@ -1,3 +1,15 @@
+//******************************************************************************
+//    THE SOFTWARE INCLUDED IN THIS FILE IS FOR GUIDANCE ONLY.
+//    AUTHOR SHALL NOT BE HELD LIABLE FOR ANY DIRECT, INDIRECT
+//    OR CONSEQUENTIAL DAMAGES WITH RESPECT TO ANY CLAIMS ARISING
+//    FROM USE OF THIS SOFTWARE.
+//
+//    PROGRAM ZAWARTY W TYM PLIKU PRZEZNACZONY JEST WYLACZNIE
+//    DO CELOW SZKOLENIOWYCH. AUTOR NIE PONOSI ODPOWIEDZIALNOSCI
+//    ZA ZADNE EWENTUALNE, BEZPOSREDNIE I POSREDNIE SZKODY
+//    WYNIKLE Z JEGO WYKORZYSTANIA.
+//******************************************************************************
+
 void lcdInit(void);
 void lcdHex(short val);
 void lcdText(const char *ptr);
@@ -40,8 +52,11 @@ void lcdLocate(short lcd_y, short lcd_x);
 #define HD44780_DDRAM_SET				     0x80
 
 void LCD_Initialize(void);
+void LCD_WriteData(unsigned char dataToWrite);
 void LCD_WriteCommand(unsigned char commandToWrite);
 void LCD_WriteText(unsigned char * text);
 void LCD_WriteTextXY(unsigned char * text, unsigned char x, unsigned char y);
 void LCD_GoTo(unsigned char x, unsigned char y);
+void LCD_WriteBinary(unsigned int var, unsigned char bitCount);
+void LCD_SetUserChar (unsigned char chrNum, unsigned char n, const unsigned char *p);
 void lcd_test(void);

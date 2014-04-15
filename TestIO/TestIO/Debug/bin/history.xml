@@ -1,16 +1,17 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <history>
    <processor signature="4.7.4 -mcpu=cortex-m4 -mthumb -g -nostartfiles -flto -Map=TestIO.map -O0 --gc-sections --entry=main -LC:\CooCox\CoIDE\configuration\ProgramData\TestIO -TC:\CooCox\CoIDE\configuration\ProgramData\TestIO/arm-gcc-link.ld -g">
-      <target file="TestIO.elf" lastModified="1451d3c0c7b">
-         <source file="..\obj\delay.o" lastModified="1451cfadfec"/>
-         <source file="..\obj\startup_stm32f4xx.o" lastModified="1451cfae03e"/>
-         <source file="..\obj\main.o" lastModified="1451d3c0968"/>
-         <source file="..\obj\stm32f4xx_rcc.o" lastModified="1451cfae17b"/>
-         <source file="..\obj\lcd_hd44780.o" lastModified="1451d1e05ae"/>
-         <source file="..\obj\stm32f4xx_gpio.o" lastModified="1451cfae2d2"/>
-         <source file="..\obj\system_stm32f4xx.o" lastModified="1451cfae333"/>
-         <source file="..\obj\IOToggle.o" lastModified="1451cfae387"/>
-         <source file="..\obj\misc.o" lastModified="1451cfae3df"/>
+      <target file="TestIO.elf" lastModified="14564d6e080">
+         <source file="..\obj\delay.o" lastModified="14564cc1b33"/>
+         <source file="..\obj\startup_stm32f4xx.o" lastModified="14564cc1c8f"/>
+         <source file="..\obj\main.o" lastModified="14564cfb085"/>
+         <source file="..\obj\stm32f4xx_rcc.o" lastModified="14564cc211b"/>
+         <source file="..\obj\kbd_4x4.o" lastModified="14564d6da85"/>
+         <source file="..\obj\lcd_hd44780.o" lastModified="14564cc25be"/>
+         <source file="..\obj\stm32f4xx_gpio.o" lastModified="14564cc279a"/>
+         <source file="..\obj\system_stm32f4xx.o" lastModified="14564cc2923"/>
+         <source file="..\obj\IOToggle.o" lastModified="14564cc2a80"/>
+         <source file="..\obj\misc.o" lastModified="14564cc2c24"/>
       </target>
    </processor>
 </history>
