@@ -14,8 +14,22 @@ int main(void)
 	  KBD_Init();
 	  LCD_Initialize();                           //inicjalizacja wysietlacza
 	  LCD_WriteCommand(HD44780_CLEAR);            //wyczysc wyswietlacz
-	  LCD_WriteText((unsigned char *)"Klawisz: \0");
 
+
+	  x:
+	  LCD_WriteText((unsigned char *)"Podaj ID:[A/C] \0");
+	  //A-accept
+	  //C-cancel
+	  //goto nowa linia
+	  //****
+	  //if C -> goto x;
+	  //if A -> check id
+	  //true -> Podaj pin
+	  //false -> "bledne id"
+	  //true -> "Otworz drzwi"
+	  //false -> "Bledny pin"
+
+	  goto x;
 	  while (1) {
 	    Tekst[0]=KBD_ReadKey();
 	    if (Tekst[0] !=0 ){
