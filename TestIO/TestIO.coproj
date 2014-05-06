@@ -82,8 +82,8 @@
   <Files>
     <File name="lcd/lcd_hd44780.c" path="LCD/lcd_hd44780.c" type="1"/>
     <File name="cmsis_lib/source/stm32f4xx_gpio.c" path="cmsis_lib/source/stm32f4xx_gpio.c" type="1"/>
-    <File name="example/IOToggle.c" path="example/IOToggle.c" type="1"/>
     <File name="cmsis_boot/startup/startup_stm32f4xx.c" path="cmsis_boot/startup/startup_stm32f4xx.c" type="1"/>
+    <File name="example/IOToggle.c" path="example/IOToggle.c" type="1"/>
     <File name="cmsis_lib/source/stm32f4xx_rcc.c" path="cmsis_lib/source/stm32f4xx_rcc.c" type="1"/>
     <File name="cmsis/core_cmInstr.h" path="cmsis/core_cmInstr.h" type="1"/>
     <File name="cmsis_boot" path="" type="2"/>
@@ -102,8 +102,8 @@
     <File name="cmsis_lib" path="" type="2"/>
     <File name="example" path="" type="2"/>
     <File name="cmsis_lib/source" path="" type="2"/>
-    <File name="lcd/lcd_hd44780.h" path="LCD/lcd_hd44780.h" type="1"/>
     <File name="cmsis_lib/include/stm32f4xx_gpio.h" path="cmsis_lib/include/stm32f4xx_gpio.h" type="1"/>
+    <File name="lcd/lcd_hd44780.h" path="LCD/lcd_hd44780.h" type="1"/>
     <File name="lcd" path="" type="2"/>
     <File name="cmsis_lib/include/misc.h" path="cmsis_lib/include/misc.h" type="1"/>
     <File name="cmsis_boot/stm32f4xx_conf.h" path="cmsis_boot/stm32f4xx_conf.h" type="1"/>

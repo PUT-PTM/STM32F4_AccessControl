@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <dependencies>
-   <includePath signature="/I..\..\..\..\..\Users\Piotrek\Desktop\rmkenfsjkanjkfdsz\Dla Piotra\Dla Piotra\TestIO\cmsis_boot /I..\..\..\..\..\Users\Piotrek\Desktop\rmkenfsjkanjkfdsz\Dla Piotra\Dla Piotra\TestIO\delay /I..\..\..\..\..\Users\Piotrek\Desktop\rmkenfsjkanjkfdsz\Dla Piotra\Dla Piotra\TestIO\cmsis_lib\include /I..\..\..\..\..\Users\Piotrek\Desktop\rmkenfsjkanjkfdsz\Dla Piotra\Dla Piotra\TestIO\kbd /I..\..\..\..\..\Users\Piotrek\Desktop\rmkenfsjkanjkfdsz\Dla Piotra\Dla Piotra\TestIO\cmsis /I..\..\..\..\..\Users\Piotrek\Desktop\rmkenfsjkanjkfdsz\Dla Piotra\Dla Piotra /I..\..\..\..\..\Users\Piotrek\Desktop\rmkenfsjkanjkfdsz\Dla Piotra\Dla Piotra\TestIO\LCD /I..\..\..\..\..\Users\Piotrek\Desktop\rmkenfsjkanjkfdsz\Dla Piotra\Dla Piotra\TestIO /I..\..\..\..\..\Users\Piotrek\Desktop\rmkenfsjkanjkfdsz\Dla Piotra\Dla Piotra\TestIO\cmsis_lib">
+   <includePath signature="/I..\..\..\..\..\Users\Piotrek\Documents\GitHub\STM32F4_AccessControl /I..\..\..\..\..\Users\Piotrek\Documents\GitHub\STM32F4_AccessControl\TestIO\cmsis /I..\..\..\..\..\Users\Piotrek\Documents\GitHub\STM32F4_AccessControl\TestIO\kbd /I..\..\..\..\..\Users\Piotrek\Documents\GitHub\STM32F4_AccessControl\TestIO\cmsis_lib\include /I..\..\..\..\..\Users\Piotrek\Documents\GitHub\STM32F4_AccessControl\TestIO\cmsis_lib /I..\..\..\..\..\Users\Piotrek\Documents\GitHub\STM32F4_AccessControl\TestIO\delay /I..\..\..\..\..\Users\Piotrek\Documents\GitHub\STM32F4_AccessControl\TestIO /I..\..\..\..\..\Users\Piotrek\Documents\GitHub\STM32F4_AccessControl\TestIO\cmsis_boot /I..\..\..\..\..\Users\Piotrek\Documents\GitHub\STM32F4_AccessControl\TestIO\LCD">
       <source file="..\..\..\cmsis_lib\include\stm32f4xx_dac.h" lastModified="144c0a5df60">
          <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
       </source>
@@ -47,7 +47,7 @@
       </source>
       <source file="..\..\..\kbd\kbd_4x4.h" lastModified="144c03c86a0">
       </source>
-      <source file="..\..\..\kbd\kbd_4x4.c" lastModified="14564d6ce04">
+      <source file="..\..\..\kbd\kbd_4x4.c" lastModified="145d0fdd816">
          <include file="..\..\..\kbd\kbd_4x4.h"/>
          <include file="..\..\..\delay\delay.h"/>
          <include file="..\..\..\cmsis_lib\include\stm32f4xx_gpio.h"/>
@@ -76,22 +76,17 @@
       </source>
       <source file="..\..\..\cmsis\core_cmFunc.h" lastModified="1419d703ea8">
       </source>
-      <source file="..\..\..\main.c" lastModified="14564cfa6fb">
-         <include file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
-         <include file="..\..\..\LCD\lcd_hd44780.h"/>
-         <include file="..\..\..\kbd\kbd_4x4.h"/>
-      </source>
       <source file="..\..\..\cmsis_lib\source\stm32f4xx_rcc.c" lastModified="1419d705230">
          <include file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
+      </source>
+      <source file="..\..\..\cmsis_lib\include\stm32f4xx_spi.h" lastModified="144c0a5df60">
+         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
       </source>
       <source file="..\..\..\example\IOToggle.c" lastModified="144b609de80">
          <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
          <include file="..\..\..\cmsis_lib\include\stm32f4xx_gpio.h"/>
          <include file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
          <include file="..\..\..\delay\delay.h"/>
-      </source>
-      <source file="..\..\..\cmsis_lib\include\stm32f4xx_spi.h" lastModified="144c0a5df60">
-         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
       </source>
       <source file="..\..\..\cmsis_boot\startup\startup_stm32f4xx.c" lastModified="1419d703ac0">
       </source>
@@ -100,6 +95,74 @@
          <include file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
       </source>
       <source file="..\..\..\cmsis\core_cm4_simd.h" lastModified="1419d703ea8">
+      </source>
+      <source file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h" lastModified="1419d705230">
+         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
+      </source>
+   </includePath>
+   <includePath signature="/I..\..\..\..\..\Users\Piotrek\Desktop\rmkenfsjkanjkfdsz\Dla Piotra\Dla Piotra\TestIO\cmsis_boot /I..\..\..\..\..\Users\Piotrek\Desktop\rmkenfsjkanjkfdsz\Dla Piotra\Dla Piotra\TestIO\delay /I..\..\..\..\..\Users\Piotrek\Desktop\rmkenfsjkanjkfdsz\Dla Piotra\Dla Piotra\TestIO\cmsis_lib\include /I..\..\..\..\..\Users\Piotrek\Desktop\rmkenfsjkanjkfdsz\Dla Piotra\Dla Piotra\TestIO\kbd /I..\..\..\..\..\Users\Piotrek\Desktop\rmkenfsjkanjkfdsz\Dla Piotra\Dla Piotra\TestIO\cmsis /I..\..\..\..\..\Users\Piotrek\Desktop\rmkenfsjkanjkfdsz\Dla Piotra\Dla Piotra /I..\..\..\..\..\Users\Piotrek\Desktop\rmkenfsjkanjkfdsz\Dla Piotra\Dla Piotra\TestIO\LCD /I..\..\..\..\..\Users\Piotrek\Desktop\rmkenfsjkanjkfdsz\Dla Piotra\Dla Piotra\TestIO /I..\..\..\..\..\Users\Piotrek\Desktop\rmkenfsjkanjkfdsz\Dla Piotra\Dla Piotra\TestIO\cmsis_lib">
+      <source file="..\..\..\cmsis_lib\include\stm32f4xx_dac.h" lastModified="144c0a5df60">
+         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
+      </source>
+      <source file="..\..\..\delay\delay.h" lastModified="144b58c6950">
+         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
+      </source>
+      <source file="..\..\..\cmsis_lib\include\stm32f4xx_syscfg.h" lastModified="144c0a5df60">
+         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
+      </source>
+      <source file="..\..\..\cmsis_lib\include\stm32f4xx_i2c.h" lastModified="144c0a5df60">
+         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
+      </source>
+      <source file="..\..\..\delay\delay.c" lastModified="144b58cee20">
+         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
+         <include file="..\..\..\delay\delay.h"/>
+      </source>
+      <source file="..\..\..\LCD\lcd_hd44780.h" lastModified="144b54d6c50">
+      </source>
+      <source file="..\..\..\cmsis_boot\system_stm32f4xx.h" lastModified="1419d703ac0">
+      </source>
+      <source file="..\..\..\cmsis_boot\system_stm32f4xx.c" lastModified="1419d763600">
+         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
+      </source>
+      <source file="..\..\..\cmsis_lib\include\stm32f4xx_exti.h" lastModified="144c0a5df60">
+         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
+      </source>
+      <source file="..\..\..\cmsis_lib\include\stm32f4xx_gpio.h" lastModified="1419d708110">
+         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
+      </source>
+      <source file="..\..\..\LCD\lcd_hd44780.c" lastModified="144c04ad6b0">
+         <include file="..\..\..\delay\delay.h"/>
+         <include file="..\..\..\LCD\lcd_hd44780.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_gpio.h"/>
+      </source>
+      <source file="..\..\..\cmsis_lib\include\misc.h" lastModified="144c0a5df60">
+         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
+      </source>
+      <source file="..\..\..\kbd\kbd_4x4.h" lastModified="144c03c86a0">
+      </source>
+      <source file="..\..\..\cmsis_lib\source\misc.c" lastModified="144c0a5df60">
+         <include file="..\..\..\cmsis_lib\include\misc.h"/>
+      </source>
+      <source file="..\..\..\cmsis_lib\include\stm32f4xx_dma.h" lastModified="144c0a5df60">
+         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
+      </source>
+      <source file="..\..\..\cmsis_lib\source\stm32f4xx_rcc.c" lastModified="1419d705230">
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
+      </source>
+      <source file="..\..\..\cmsis_lib\include\stm32f4xx_spi.h" lastModified="144c0a5df60">
+         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
+      </source>
+      <source file="..\..\..\example\IOToggle.c" lastModified="144b609de80">
+         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_gpio.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
+         <include file="..\..\..\delay\delay.h"/>
+      </source>
+      <source file="..\..\..\cmsis_boot\startup\startup_stm32f4xx.c" lastModified="1419d703ac0">
+      </source>
+      <source file="..\..\..\cmsis_lib\source\stm32f4xx_gpio.c" lastModified="1419d708110">
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_gpio.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
       </source>
       <source file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h" lastModified="1419d705230">
          <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
