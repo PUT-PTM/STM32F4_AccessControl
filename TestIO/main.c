@@ -13,7 +13,7 @@ int main(void)
 
 
 	x:
-	LCD_WriteText((unsigned char *)"Podaj ID: \0");
+	LCD_WriteText((unsigned char *)"Podaj haslo: \0");
 	LCD_GoTo(0,1);
 
 	int i=0;
@@ -77,16 +77,16 @@ int main(void)
 		}
 	};
 	LCD_GoTo(0,1);
-	LCD_WriteText((unsigned char *)"***          ");
+	LCD_WriteText((unsigned char *)"****         ");
 	tab[4]=0;
 
-	unsigned char* haslo="1234\0";
+	unsigned char* haslo="2013\0";
 
 	if ( strcmp( tab, haslo )==0)
 	{
 		LCD_WriteCommand(HD44780_CLEAR);
 		LCD_GoTo(0,0);
-		LCD_WriteText((unsigned char *)"Haslo Poprawne");
+		LCD_WriteText((unsigned char *)"Haslo poprawne");
 	}
 	else
 	{

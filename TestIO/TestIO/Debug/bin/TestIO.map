@@ -11,7 +11,7 @@ GPIO_InitStructure  0x8               ..\obj\lcd_hd44780.o (symbol from plugin)
 Discarded input sections
 
  .text          0x00000000        0x0 ..\obj\delay.o (symbol from plugin)
- .data          0x00000000       0x24 C:\Users\Piotrek\AppData\Local\Temp\ccFvSevx.ltrans0.ltrans.o
+ .data          0x00000000       0x24 C:\Users\Piotrek\AppData\Local\Temp\ccJhBPAj.ltrans0.ltrans.o
  .text          0x00000000        0x0 ..\obj\startup_stm32f4xx.o (symbol from plugin)
  .text          0x00000000        0x0 ..\obj\main.o (symbol from plugin)
  .text          0x00000000        0x0 ..\obj\stm32f4xx_rcc.o (symbol from plugin)
@@ -37,12 +37,12 @@ Linker script and memory map
 
                 0x20020000                _eram = 0x20020000
 
-.text           0x08000000      0xcf4
+.text           0x08000000      0xd08
  *(.isr_vector .isr_vector.*)
- .isr_vector    0x08000000      0x188 C:\Users\Piotrek\AppData\Local\Temp\ccFvSevx.ltrans0.ltrans.o
+ .isr_vector    0x08000000      0x188 C:\Users\Piotrek\AppData\Local\Temp\ccJhBPAj.ltrans0.ltrans.o
                 0x08000000                g_pfnVectors
  *(.text .text.* .gnu.linkonce.t.*)
- .text          0x08000188      0x910 C:\Users\Piotrek\AppData\Local\Temp\ccFvSevx.ltrans0.ltrans.o
+ .text          0x08000188      0x910 C:\Users\Piotrek\AppData\Local\Temp\ccJhBPAj.ltrans0.ltrans.o
                 0x08000218                Reset_Handler
                 0x08000288                main
  .text.strcmp   0x08000a98       0x80 c:/program files (x86)/gnu tools arm embedded/4.7 2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/lib/armv7e-m\libg.a(lib_a-strcmp.o)
@@ -54,32 +54,32 @@ Linker script and memory map
  *(.glue_7)
  .glue_7        0x00000000        0x0 linker stubs
  *(.rodata .rodata* .gnu.linkonce.r.*)
- .rodata        0x08000c74       0x80 C:\Users\Piotrek\AppData\Local\Temp\ccFvSevx.ltrans0.ltrans.o
+ .rodata        0x08000c74       0x94 C:\Users\Piotrek\AppData\Local\Temp\ccJhBPAj.ltrans0.ltrans.o
 
-.vfp11_veneer   0x08000cf4        0x0
+.vfp11_veneer   0x08000d08        0x0
  .vfp11_veneer  0x00000000        0x0 linker stubs
 
-.v4_bx          0x08000cf4        0x0
+.v4_bx          0x08000d08        0x0
  .v4_bx         0x00000000        0x0 linker stubs
 
-.iplt           0x08000cf4        0x0
+.iplt           0x08000d08        0x0
  .iplt          0x00000000        0x0 c:/program files (x86)/gnu tools arm embedded/4.7 2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/lib/armv7e-m\libg.a(lib_a-strcmp.o)
 
-.rel.dyn        0x08000cf4        0x0
+.rel.dyn        0x08000d08        0x0
  .rel.iplt      0x00000000        0x0 c:/program files (x86)/gnu tools arm embedded/4.7 2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/lib/armv7e-m\libg.a(lib_a-strcmp.o)
 
 .ARM.extab
  *(.ARM.extab* .gnu.linkonce.armextab.*)
-                0x08000cf4                __exidx_start = .
+                0x08000d08                __exidx_start = .
 
 .ARM.exidx
  *(.ARM.exidx* .gnu.linkonce.armexidx.*)
-                0x08000cf4                __exidx_end = .
-                0x08000cf4                . = ALIGN (0x4)
-                0x08000cf4                _etext = .
-                0x08000cf4                _sidata = .
+                0x08000d08                __exidx_end = .
+                0x08000d08                . = ALIGN (0x4)
+                0x08000d08                _etext = .
+                0x08000d08                _sidata = .
 
-.data           0x20000000        0x0 load address 0x08000cf4
+.data           0x20000000        0x0 load address 0x08000d08
                 0x20000000                _sdata = .
  *(.data .data.*)
                 0x20000000                . = ALIGN (0x4)
@@ -91,7 +91,7 @@ Linker script and memory map
 .bss            0x20000000        0x8
                 0x20000000                _sbss = .
  *(.bss .bss.*)
- .bss           0x20000000        0x8 C:\Users\Piotrek\AppData\Local\Temp\ccFvSevx.ltrans0.ltrans.o
+ .bss           0x20000000        0x8 C:\Users\Piotrek\AppData\Local\Temp\ccJhBPAj.ltrans0.ltrans.o
  *(COMMON)
                 0x20000008                . = ALIGN (0x4)
                 0x20000008                _ebss = .
@@ -99,11 +99,11 @@ Linker script and memory map
 .co_stack       0x20000008      0x800
                 0x20000008                . = ALIGN (0x8)
  *(.co_stack .co_stack.*)
- .co_stack      0x20000008      0x800 C:\Users\Piotrek\AppData\Local\Temp\ccFvSevx.ltrans0.ltrans.o
+ .co_stack      0x20000008      0x800 C:\Users\Piotrek\AppData\Local\Temp\ccJhBPAj.ltrans0.ltrans.o
                 0x20000808                . = ALIGN (0x4)
                 0x20000808                _end = .
 LOAD ..\obj\delay.o
-LOAD C:\Users\Piotrek\AppData\Local\Temp\ccFvSevx.ltrans0.ltrans.o
+LOAD C:\Users\Piotrek\AppData\Local\Temp\ccJhBPAj.ltrans0.ltrans.o
 LOAD c:/program files (x86)/gnu tools arm embedded/4.7 2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/armv7e-m\libgcc.a
 LOAD c:/program files (x86)/gnu tools arm embedded/4.7 2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/lib/armv7e-m\libg.a
 LOAD c:/program files (x86)/gnu tools arm embedded/4.7 2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/lib/armv7e-m\libc.a
@@ -124,36 +124,36 @@ END GROUP
 OUTPUT(TestIO.elf elf32-littlearm)
 
 .debug_info     0x00000000      0x857
- .debug_info    0x00000000      0x857 C:\Users\Piotrek\AppData\Local\Temp\ccFvSevx.ltrans0.ltrans.o
+ .debug_info    0x00000000      0x857 C:\Users\Piotrek\AppData\Local\Temp\ccJhBPAj.ltrans0.ltrans.o
 
 .debug_abbrev   0x00000000      0x259
- .debug_abbrev  0x00000000      0x259 C:\Users\Piotrek\AppData\Local\Temp\ccFvSevx.ltrans0.ltrans.o
+ .debug_abbrev  0x00000000      0x259 C:\Users\Piotrek\AppData\Local\Temp\ccJhBPAj.ltrans0.ltrans.o
 
 .debug_loc      0x00000000      0x480
- .debug_loc     0x00000000      0x480 C:\Users\Piotrek\AppData\Local\Temp\ccFvSevx.ltrans0.ltrans.o
+ .debug_loc     0x00000000      0x480 C:\Users\Piotrek\AppData\Local\Temp\ccJhBPAj.ltrans0.ltrans.o
 
 .debug_aranges  0x00000000       0x20
  .debug_aranges
-                0x00000000       0x20 C:\Users\Piotrek\AppData\Local\Temp\ccFvSevx.ltrans0.ltrans.o
+                0x00000000       0x20 C:\Users\Piotrek\AppData\Local\Temp\ccJhBPAj.ltrans0.ltrans.o
 
-.debug_line     0x00000000      0x4ab
- .debug_line    0x00000000      0x4ab C:\Users\Piotrek\AppData\Local\Temp\ccFvSevx.ltrans0.ltrans.o
+.debug_line     0x00000000      0x4eb
+ .debug_line    0x00000000      0x4eb C:\Users\Piotrek\AppData\Local\Temp\ccJhBPAj.ltrans0.ltrans.o
 
 .debug_str      0x00000000      0x4ea
- .debug_str     0x00000000      0x4ea C:\Users\Piotrek\AppData\Local\Temp\ccFvSevx.ltrans0.ltrans.o
+ .debug_str     0x00000000      0x4ea C:\Users\Piotrek\AppData\Local\Temp\ccJhBPAj.ltrans0.ltrans.o
                                 0x4fd (size before relaxing)
 
 .comment        0x00000000       0x70
- .comment       0x00000000       0x70 C:\Users\Piotrek\AppData\Local\Temp\ccFvSevx.ltrans0.ltrans.o
+ .comment       0x00000000       0x70 C:\Users\Piotrek\AppData\Local\Temp\ccJhBPAj.ltrans0.ltrans.o
                                  0x71 (size before relaxing)
 
 .ARM.attributes
                 0x00000000       0x33
  .ARM.attributes
-                0x00000000       0x31 C:\Users\Piotrek\AppData\Local\Temp\ccFvSevx.ltrans0.ltrans.o
+                0x00000000       0x31 C:\Users\Piotrek\AppData\Local\Temp\ccJhBPAj.ltrans0.ltrans.o
  .ARM.attributes
                 0x00000031       0x2e c:/program files (x86)/gnu tools arm embedded/4.7 2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/lib/armv7e-m\libg.a(lib_a-strcmp.o)
 
 .debug_frame    0x00000000      0x2b8
- .debug_frame   0x00000000      0x288 C:\Users\Piotrek\AppData\Local\Temp\ccFvSevx.ltrans0.ltrans.o
+ .debug_frame   0x00000000      0x288 C:\Users\Piotrek\AppData\Local\Temp\ccJhBPAj.ltrans0.ltrans.o
  .debug_frame   0x00000288       0x30 c:/program files (x86)/gnu tools arm embedded/4.7 2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/lib/armv7e-m\libg.a(lib_a-strcmp.o)
