@@ -3,8 +3,8 @@
 <workbenchAdvisor/>
 <window>
 <fastViewData fastViewLocation="1024">
-<orientation position="512" view="org.coocox.builder.ui.views.ProjectView"/>
 <orientation position="512" view="org.coocox.component.ui.ComponentView"/>
+<orientation position="512" view="org.coocox.builder.ui.views.ProjectView"/>
 <orientation position="512" view="org.eclipse.debug.ui.VariableView"/>
 <orientation position="512" view="org.coocox.component.ui.Help"/>
 </fastViewData>
@@ -18,21 +18,26 @@
 <part id="0"/>
 <part id="1"/>
 <part id="2"/>
+<part id="3"/>
 </presentation>
 </folder>
 </info>
 </editorArea>
-<editor id="org.eclipse.cdt.ui.editor.CEditor" name="main.c" partName="main.c" path="C:/Users/Piotrek/Desktop/PROJEKT/aktualny projekt github/TestIO/TestIO/main.c" title="main.c" tooltip="C:/Users/Piotrek/Desktop/PROJEKT/aktualny projekt github/TestIO/TestIO/main.c" workbook="DefaultEditorWorkbook">
+<editor id="org.coocox.builder.ui.editors.ConfigEditor" name="" partName="Configuration" title="Configuration" tooltip="" workbook="DefaultEditorWorkbook">
+<input factoryID="org.coocox.builder.ui.persistent.PersistentElementFactory">&#x0A;<org.coocox.builder.ui.editors.ConfigEditor horizontalPosition="0" subTagIndex="2" verticalPosition="0"/>
+</input>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="eeprom.c" partName="eeprom.c" path="C:/Users/Piotrek/Desktop/aktualnie przetwarzane/pracuje/TestIO- beep/works/TestIO/TestIO/eeprom.c" title="eeprom.c" tooltip="C:/Users/Piotrek/Desktop/aktualnie przetwarzane/pracuje/TestIO- beep/works/TestIO/TestIO/eeprom.c" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/TestIO/eeprom/eeprom.c"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="7949" selectionTopPixel="5585"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="main.c" partName="main.c" path="C:/Users/Piotrek/Desktop/aktualnie przetwarzane/pracuje/TestIO- beep/works/TestIO/TestIO/main.c" title="main.c" tooltip="C:/Users/Piotrek/Desktop/aktualnie przetwarzane/pracuje/TestIO- beep/works/TestIO/TestIO/main.c" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/TestIO/main.c"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="67" selectionTopPixel="0"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="477" selectionTopPixel="255"/>
 </editor>
-<editor id="org.eclipse.cdt.ui.editor.CEditor" name="kbd_4x4.h" partName="kbd_4x4.h" path="C:/Users/Piotrek/Desktop/PROJEKT/aktualny projekt github/TestIO/TestIO/kbd/kbd_4x4.h" title="kbd_4x4.h" tooltip="C:/Users/Piotrek/Desktop/PROJEKT/aktualny projekt github/TestIO/TestIO/kbd/kbd_4x4.h" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/TestIO/kbd/kbd_4x4.h"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
-</editor>
-<editor activePart="true" focus="true" id="org.eclipse.cdt.ui.editor.CEditor" name="kbd_4x4.c" partName="kbd_4x4.c" path="C:/Users/Piotrek/Desktop/PROJEKT/aktualny projekt github/TestIO/TestIO/kbd/kbd_4x4.c" title="kbd_4x4.c" tooltip="C:/Users/Piotrek/Desktop/PROJEKT/aktualny projekt github/TestIO/TestIO/kbd/kbd_4x4.c" workbook="DefaultEditorWorkbook">
+<editor activePart="true" focus="true" id="org.eclipse.cdt.ui.editor.CEditor" name="kbd_4x4.c" partName="kbd_4x4.c" path="C:/Users/Piotrek/Desktop/aktualnie przetwarzane/pracuje/TestIO- beep/works/TestIO/TestIO/kbd/kbd_4x4.c" title="kbd_4x4.c" tooltip="C:/Users/Piotrek/Desktop/aktualnie przetwarzane/pracuje/TestIO- beep/works/TestIO/TestIO/kbd/kbd_4x4.c" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/TestIO/kbd/kbd_4x4.c"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="960" selectionTopPixel="90"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="2042" selectionTopPixel="1466"/>
 </editor>
 </editors>
 <views>
@@ -43,6 +48,8 @@
 <viewState CommonNavigator.LINKING_ENABLED="0" horizontalPosition="0" org.eclipse.ui.navigator.resources.workingSets.showTopLevelWorkingSets="0" verticalPosition="0">
 <expanded>
 <element path="/TestIO"/>
+<element path="/TestIO/delay"/>
+<element path="/TestIO/eeprom"/>
 <element path="/TestIO/example"/>
 <element path="/TestIO/kbd"/>
 <element path="/TestIO/lcd"/>
@@ -52,13 +59,14 @@
 </selection>
 </viewState>
 </view>
-<view id="org.coocox.codebugger.trace.ui.traceview" partName="Semihosting">
-<viewState/>
-</view>
 <view id="org.eclipse.search.ui.views.SearchView" partName="Search">
 <viewState isPinned="false">
+<view IMemento.internal.id="org.eclipse.cdt.ui.pdomSearchViewPage" definitionColumnWidth="150" locationColumnWidth="300" matchColumnWidth="300" org.eclipse.search.lastActivation="1" org.eclipse.search.resultpage.layout="2" showEnclosingDefinitions="true"/>
 <view IMemento.internal.id="" org.eclipse.search.lastActivation="0"/>
 </viewState>
+</view>
+<view id="org.coocox.codebugger.trace.ui.traceview" partName="Semihosting">
+<viewState/>
 </view>
 <view id="org.eclipse.debug.ui.DebugView" partName="Debug">
 <viewState/>
@@ -66,7 +74,9 @@
 <view id="org.eclipse.ui.console.ConsoleView" partName="Console">
 <viewState/>
 </view>
-<view id="org.eclipse.debug.ui.VariableView" partName="Variables"/>
+<view id="org.eclipse.debug.ui.VariableView" partName="Variables">
+<viewState/>
+</view>
 <view id="org.eclipse.ui.views.ContentOutline" partName="Outline">
 <viewState/>
 </view>
@@ -104,13 +114,16 @@
 <hide_toolbar_item_id id="org.eclipse.cdt.debug.internal.ui.actions.ToggleInstructionStepModeAction"/>
 <hide_toolbar_item_id id="org.eclipse.ui.edit.text.toggleShowSelectedElementOnly"/>
 <hide_toolbar_item_id id="org.eclipse.debug.ui.commands.TerminateAndRelaunch"/>
-<view id="org.eclipse.ui.console.ConsoleView"/>
-<view id="org.eclipse.search.ui.views.SearchView"/>
 <view id="org.coocox.builder.ui.views.ProjectView"/>
 <fastViewBars>
 <fastViewBar fastViewLocation="16384" id="org.eclipse.ui.internal.ViewStack@d8f7c7" orientation="256" selectedTabId="org.coocox.component.ui.ComponentView" style="0">
 <fastViews>
 <view id="org.coocox.component.ui.ComponentView" ratio="0.3"/>
+</fastViews>
+</fastViewBar>
+<fastViewBar fastViewLocation="1024" id="org.eclipse.ui.internal.ViewStack@18172c1" orientation="256" selectedTabId="org.eclipse.ui.console.ConsoleView" style="1">
+<fastViews>
+<view id="org.eclipse.ui.console.ConsoleView" ratio="0.29888713"/>
 </fastViews>
 </fastViewBar>
 <fastViewBar fastViewLocation="131072" id="org.eclipse.ui.internal.ViewStack@1e77920" orientation="512" selectedTabId="org.coocox.component.ui.Help" style="0">
@@ -119,12 +132,31 @@
 <view id="org.eclipse.ui.views.ContentOutline" ratio="0.3"/>
 </fastViews>
 </fastViewBar>
+<fastViewBar fastViewLocation="1024" id="org.eclipse.ui.internal.ViewStack@138657e" orientation="256" selectedTabId="org.eclipse.ui.console.ConsoleView" style="0">
+<fastViews>
+<view id="org.eclipse.search.ui.views.SearchView" ratio="0.3"/>
+</fastViews>
+</fastViewBar>
 </fastViewBars>
 <layout>
 <mainWindow>
-<info folder="true" part="org.eclipse.ui.internal.ViewStack@d8f7c7">
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@54a87">
+<folder activePageID="org.coocox.builder.ui.views.ProjectView" appearance="2" expanded="2">
+<page content="org.coocox.builder.ui.views.ProjectView" label="Project"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+</presentation>
+</folder>
+</info>
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@d8f7c7" ratio="0.25" ratioLeft="326" ratioRight="978" relationship="2" relative="org.eclipse.ui.internal.ViewStack@54a87">
 <folder appearance="2" expanded="2">
 <page content="org.coocox.component.ui.ComponentView" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
+</folder>
+</info>
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@18172c1" ratio="0.7488076" ratioLeft="471" ratioRight="158" relationship="4" relative="org.eclipse.ui.internal.ViewStack@d8f7c7">
+<folder appearance="2" expanded="2">
+<page content="org.eclipse.ui.console.ConsoleView" label="LabelNotFound"/>
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
 </folder>
 </info>
@@ -134,14 +166,10 @@
 <page content="org.eclipse.ui.internal.introview" label="LabelNotFound"/>
 </folder>
 </info>
-<info folder="true" part="org.eclipse.ui.internal.ViewStack@138657e" ratio="0.7284345" ratioLeft="456" ratioRight="170" relationship="4" relative="org.eclipse.ui.internal.ViewStack@d8f7c7">
-<folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">
-<page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
-<page content="org.eclipse.search.ui.views.SearchView" label="Search"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="0"/>
-<part id="1"/>
-</presentation>
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@138657e" ratio="0.78115016" ratioLeft="489" ratioRight="137" relationship="4" relative="org.eclipse.ui.internal.ViewStack@d8f7c7">
+<folder appearance="2" expanded="2">
+<page content="org.eclipse.search.ui.views.SearchView" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
 </folder>
 </info>
 <info part="org.coocox.builder.ui.exampleView" ratio="0.24034673" ratioLeft="305" ratioRight="964" relationship="2" relative="org.eclipse.ui.internal.ViewStack@d8f7c7"/>
@@ -155,13 +183,20 @@
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
 </folder>
 </info>
-<info part="org.eclipse.ui.editorss" ratio="0.4491726" ratioLeft="380" ratioRight="466" relationship="4" relative="org.coocox.builder.ui.exampleView"/>
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@d99ab" ratio="0.4491726" ratioLeft="380" ratioRight="466" relationship="4" relative="org.coocox.builder.ui.exampleView">
+<folder appearance="2" expanded="2">
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
+</folder>
+</info>
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@4418" ratio="0.25" ratioLeft="326" ratioRight="978" relationship="2" relative="org.eclipse.ui.internal.ViewStack@d99ab">
+<folder appearance="2" expanded="2">
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
+</folder>
+</info>
+<info part="org.eclipse.ui.editorss" ratio="0.25" ratioLeft="326" ratioRight="978" relationship="2" relative="org.eclipse.ui.internal.ViewStack@4418"/>
 <info folder="true" part="org.eclipse.ui.internal.ViewStack@735555" ratio="0.36997637" ratioLeft="313" ratioRight="533" relationship="4" relative="org.eclipse.ui.internal.ViewStack@d8f7c7">
-<folder activePageID="org.coocox.builder.ui.views.ProjectView" appearance="2" expanded="2">
-<page content="org.coocox.builder.ui.views.ProjectView" label="Project"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="0"/>
-</presentation>
+<folder appearance="2" expanded="2">
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
 </folder>
 </info>
 </mainWindow>
@@ -218,34 +253,49 @@
 <view id="org.coocox.builder.ui.views.ProjectView"/>
 <fastViewBars/>
 <viewLayoutRec closeable="false" id="org.eclipse.debug.ui.DebugView"/>
-<layout>&#x0A;<mainWindow>&#x0A;<info folder="true" part="org.eclipse.ui.internal.ViewStack@1f9a1ca">&#x0A;<folder activePageID="org.coocox.builder.ui.views.ProjectView" appearance="2" expanded="2">&#x0A;<page content="org.coocox.builder.ui.views.ProjectView" label="Project"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
+<layout>
+<mainWindow>
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@1f9a1ca">
+<folder activePageID="org.coocox.builder.ui.views.ProjectView" appearance="2" expanded="2">
+<page content="org.coocox.builder.ui.views.ProjectView" label="Project"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
 </presentation>
 </folder>
 </info>
-<info folder="true" part="stickyFolderRight" ratio="0.75" ratioLeft="1434" ratioRight="478" relationship="2" relative="org.eclipse.ui.internal.ViewStack@1f9a1ca">&#x0A;<folder appearance="2" expanded="2">&#x0A;<page content="org.eclipse.help.ui.HelpView" label="LabelNotFound"/>
+<info folder="true" part="stickyFolderRight" ratio="0.75" ratioLeft="1434" ratioRight="478" relationship="2" relative="org.eclipse.ui.internal.ViewStack@1f9a1ca">
+<folder appearance="2" expanded="2">
+<page content="org.eclipse.help.ui.HelpView" label="LabelNotFound"/>
 <page content="org.eclipse.ui.internal.introview" label="LabelNotFound"/>
 </folder>
 </info>
-<info folder="true" part="org.eclipse.ui.internal.ViewStack@1f0fab2" ratio="0.69957536" ratioLeft="659" ratioRight="283" relationship="4" relative="org.eclipse.ui.internal.ViewStack@1f9a1ca">&#x0A;<folder activePageID="org.eclipse.debug.ui.DebugView" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@1f0fab2" ratio="0.49201277" ratioLeft="308" ratioRight="318" relationship="4" relative="org.eclipse.ui.internal.ViewStack@1f9a1ca">
+<folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">
+<page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
 <page content="org.eclipse.debug.ui.DebugView" label="Debug"/>
 <page content="org.eclipse.debug.ui.BreakpointView" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
 <part id="1"/>
 </presentation>
 </folder>
 </info>
-<info folder="true" part="org.eclipse.ui.internal.ViewStack@1ac0029" ratio="0.5" ratioLeft="956" ratioRight="956" relationship="2" relative="org.eclipse.ui.internal.ViewStack@1f0fab2">&#x0A;<folder activePageID="org.coocox.codebugger.trace.ui.traceview" appearance="2" expanded="2">&#x0A;<page content="org.coocox.codebugger.trace.ui.traceview" label="Semihosting"/>
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@1ac0029" ratio="0.5" ratioLeft="956" ratioRight="956" relationship="2" relative="org.eclipse.ui.internal.ViewStack@1f0fab2">
+<folder activePageID="org.eclipse.debug.ui.VariableView" appearance="2" expanded="2">
+<page content="org.coocox.codebugger.trace.ui.traceview" label="Semihosting"/>
 <page content="org.eclipse.debug.ui.VariableView" label="Variables"/>
 <page content="org.eclipse.debug.ui.ExpressionView" label="LabelNotFound"/>
 <page content="org.eclipse.debug.ui.MemoryView" label="LabelNotFound"/>
 <page content="org.eclipse.cdt.debug.ui.memory.memorybrowser.MemoryBrowser" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
 <part id="1"/>
 </presentation>
 </folder>
 </info>
-<info folder="true" part="org.eclipse.ui.internal.ViewStack@13eada2" ratio="0.89368105" ratioLeft="891" ratioRight="106" relationship="2" relative="org.eclipse.ui.internal.ViewStack@1f9a1ca">&#x0A;<folder appearance="2" expanded="2">&#x0A;<page content="org.eclipse.cdt.dsf.debug.ui.disassembly.view" label="LabelNotFound"/>
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@13eada2" ratio="0.89368105" ratioLeft="891" ratioRight="106" relationship="2" relative="org.eclipse.ui.internal.ViewStack@1f9a1ca">
+<folder appearance="2" expanded="2">
+<page content="org.eclipse.cdt.dsf.debug.ui.disassembly.view" label="LabelNotFound"/>
 <page content="org.eclipse.ui.views.ContentOutline" label="LabelNotFound"/>
 <page content="org.eclipse.debug.ui.RegisterView" label="LabelNotFound"/>
 <page content="org.coocox.coassistant.view.CoAssistantView_debug" label="LabelNotFound"/>
@@ -260,162 +310,158 @@
 <workingSets/>
 <navigationHistory>
 <editors>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/TestIO/eeprom/eeprom.c"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/TestIO/main.c"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/TestIO/kbd/kbd_4x4.h"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/TestIO/lcd/lcd_hd44780.h"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/TestIO/kbd/kbd_4x4.c"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/TestIO/lcd/lcd_hd44780.c"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/TestIO/kbd/kbd_4x4.h"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/TestIO/kbd/kbd_4x4.c"/>
 </editors>
-<item historyLabel="main.c" index="0">
-<position/>
+<item historyLabel="eeprom.c" index="0">
+<position info="not_deleted" x="2165" y="0"/>
 </item>
-<item historyLabel="main.c" index="0">
-<position/>
+<item historyLabel="eeprom.c" index="0">
+<position info="not_deleted" x="2186" y="0"/>
 </item>
-<item historyLabel="main.c" index="0">
-<position/>
+<item historyLabel="eeprom.c" index="0">
+<position info="not_deleted" x="2037" y="0"/>
 </item>
-<item historyLabel="main.c" index="0">
-<position/>
+<item historyLabel="eeprom.c" index="0">
+<position info="not_deleted" x="2207" y="0"/>
 </item>
-<item historyLabel="kbd_4x4.h" index="1">
-<position info="not_deleted" x="0" y="0"/>
+<item historyLabel="eeprom.c" index="0">
+<position info="not_deleted" x="2221" y="0"/>
 </item>
-<item historyLabel="lcd_hd44780.h" index="2">
-<position info="not_deleted" x="2079" y="8"/>
+<item historyLabel="eeprom.c" index="0">
+<position info="not_deleted" x="2257" y="0"/>
 </item>
-<item historyLabel="kbd_4x4.h" index="1">
-<position info="not_deleted" x="0" y="0"/>
+<item historyLabel="main.c" index="1">
+<position info="not_deleted" x="477" y="0"/>
 </item>
-<item historyLabel="kbd_4x4.c" index="3">
-<position info="not_deleted" x="1597" y="0"/>
+<item historyLabel="eeprom.c" index="0">
+<position info="not_deleted" x="629" y="0"/>
 </item>
-<item historyLabel="kbd_4x4.h" index="1">
-<position info="not_deleted" x="0" y="0"/>
+<item historyLabel="eeprom.c" index="0">
+<position info="not_deleted" x="650" y="0"/>
 </item>
-<item historyLabel="main.c" index="0">
-<position/>
+<item historyLabel="eeprom.c" index="0">
+<position info="not_deleted" x="661" y="0"/>
 </item>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="689" y="0"/>
+<item historyLabel="eeprom.c" index="0">
+<position info="not_deleted" x="696" y="0"/>
 </item>
-<item historyLabel="main.c" index="0">
-<position/>
+<item historyLabel="eeprom.c" index="0">
+<position info="not_deleted" x="723" y="0"/>
 </item>
-<item historyLabel="main.c" index="0">
-<position/>
+<item historyLabel="eeprom.c" index="0">
+<position info="not_deleted" x="746" y="0"/>
 </item>
-<item historyLabel="main.c" index="0">
-<position/>
+<item historyLabel="eeprom.c" index="0">
+<position info="not_deleted" x="757" y="0"/>
 </item>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="691" y="5"/>
+<item historyLabel="eeprom.c" index="0">
+<position info="not_deleted" x="785" y="0"/>
 </item>
-<item historyLabel="main.c" index="0">
-<position/>
+<item historyLabel="eeprom.c" index="0">
+<position info="not_deleted" x="807" y="0"/>
 </item>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="646" y="0"/>
+<item historyLabel="eeprom.c" index="0">
+<position info="not_deleted" x="829" y="0"/>
 </item>
-<item historyLabel="main.c" index="0">
-<position/>
+<item historyLabel="eeprom.c" index="0">
+<position info="not_deleted" x="846" y="0"/>
 </item>
-<item historyLabel="kbd_4x4.h" index="1">
-<position info="not_deleted" x="0" y="0"/>
+<item historyLabel="eeprom.c" index="0">
+<position info="not_deleted" x="863" y="0"/>
 </item>
-<item historyLabel="lcd_hd44780.h" index="2">
-<position info="not_deleted" x="2079" y="8"/>
+<item historyLabel="eeprom.c" index="0">
+<position info="not_deleted" x="902" y="0"/>
 </item>
-<item historyLabel="main.c" index="0">
-<position/>
+<item historyLabel="eeprom.c" index="0">
+<position info="not_deleted" x="985" y="0"/>
 </item>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="621" y="0"/>
+<item historyLabel="eeprom.c" index="0">
+<position info="not_deleted" x="1009" y="0"/>
 </item>
-<item historyLabel="kbd_4x4.c" index="3">
-<position info="not_deleted" x="2793" y="11"/>
+<item historyLabel="eeprom.c" index="0">
+<position info="not_deleted" x="807" y="0"/>
 </item>
-<item historyLabel="kbd_4x4.h" index="1">
-<position info="not_deleted" x="0" y="0"/>
+<item historyLabel="eeprom.c" index="0">
+<position info="not_deleted" x="829" y="0"/>
 </item>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="621" y="0"/>
+<item historyLabel="eeprom.c" index="0">
+<position info="not_deleted" x="846" y="0"/>
 </item>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="667" y="0"/>
+<item historyLabel="eeprom.c" index="0">
+<position info="not_deleted" x="863" y="0"/>
 </item>
-<item historyLabel="main.c" index="0">
-<position/>
+<item historyLabel="eeprom.c" index="0">
+<position info="not_deleted" x="902" y="0"/>
 </item>
-<item historyLabel="lcd_hd44780.h" index="2">
-<position info="not_deleted" x="2079" y="8"/>
+<item historyLabel="eeprom.c" index="0">
+<position info="not_deleted" x="985" y="0"/>
 </item>
-<item historyLabel="kbd_4x4.h" index="1">
-<position info="not_deleted" x="0" y="0"/>
+<item historyLabel="eeprom.c" index="0">
+<position info="not_deleted" x="1009" y="0"/>
 </item>
-<item historyLabel="lcd_hd44780.h" index="2">
-<position info="not_deleted" x="2079" y="8"/>
+<item historyLabel="eeprom.c" index="0">
+<position info="not_deleted" x="807" y="0"/>
 </item>
-<item historyLabel="kbd_4x4.h" index="1">
-<position info="not_deleted" x="0" y="0"/>
+<item historyLabel="eeprom.c" index="0">
+<position info="not_deleted" x="829" y="0"/>
 </item>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="74" y="0"/>
+<item historyLabel="eeprom.c" index="0">
+<position info="not_deleted" x="846" y="0"/>
 </item>
-<item historyLabel="kbd_4x4.h" index="1">
-<position info="not_deleted" x="0" y="0"/>
+<item historyLabel="eeprom.c" index="0">
+<position info="not_deleted" x="863" y="0"/>
 </item>
-<item historyLabel="lcd_hd44780.h" index="2">
-<position info="not_deleted" x="2079" y="8"/>
+<item historyLabel="eeprom.c" index="0">
+<position info="not_deleted" x="902" y="0"/>
 </item>
-<item historyLabel="kbd_4x4.c" index="3">
-<position info="not_deleted" x="2793" y="11"/>
+<item historyLabel="eeprom.c" index="0">
+<position info="not_deleted" x="985" y="0"/>
 </item>
-<item historyLabel="kbd_4x4.h" index="1">
-<position info="not_deleted" x="0" y="0"/>
+<item historyLabel="eeprom.c" index="0">
+<position info="not_deleted" x="807" y="0"/>
 </item>
-<item historyLabel="lcd_hd44780.c" index="4">
-<position info="not_deleted" x="0" y="0"/>
+<item historyLabel="eeprom.c" index="0">
+<position info="not_deleted" x="829" y="0"/>
 </item>
-<item historyLabel="lcd_hd44780.h" index="2">
-<position info="not_deleted" x="2079" y="8"/>
+<item historyLabel="eeprom.c" index="0">
+<position info="not_deleted" x="846" y="0"/>
 </item>
-<item historyLabel="lcd_hd44780.c" index="4">
-<position info="not_deleted" x="0" y="0"/>
+<item historyLabel="eeprom.c" index="0">
+<position info="not_deleted" x="863" y="0"/>
 </item>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="74" y="0"/>
+<item historyLabel="eeprom.c" index="0">
+<position info="not_deleted" x="985" y="0"/>
 </item>
-<item historyLabel="main.c" index="0">
-<position/>
+<item historyLabel="eeprom.c" index="0">
+<position info="not_deleted" x="1009" y="0"/>
 </item>
-<item historyLabel="main.c" index="0">
-<position/>
+<item historyLabel="eeprom.c" index="0">
+<position info="not_deleted" x="807" y="0"/>
 </item>
-<item historyLabel="main.c" index="0">
-<position/>
+<item historyLabel="eeprom.c" index="0">
+<position info="not_deleted" x="1038" y="0"/>
 </item>
-<item historyLabel="main.c" index="0">
-<position/>
+<item historyLabel="eeprom.c" index="0">
+<position info="not_deleted" x="1051" y="0"/>
 </item>
-<item historyLabel="main.c" index="0">
-<position/>
+<item historyLabel="eeprom.c" index="0">
+<position info="not_deleted" x="1082" y="0"/>
 </item>
-<item historyLabel="main.c" index="0">
-<position/>
+<item historyLabel="eeprom.c" index="0">
+<position info="not_deleted" x="757" y="0"/>
 </item>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="1423" y="0"/>
+<item historyLabel="eeprom.c" index="0">
+<position info="not_deleted" x="785" y="0"/>
 </item>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="1460" y="0"/>
+<item historyLabel="eeprom.c" index="0">
+<position info="not_deleted" x="807" y="0"/>
 </item>
-<item historyLabel="kbd_4x4.h" index="5">
-<position info="not_deleted" x="0" y="0"/>
+<item historyLabel="eeprom.c" index="0">
+<position info="not_deleted" x="7949" y="0"/>
 </item>
-<item active="true" historyLabel="kbd_4x4.c" index="6">
+<item active="true" historyLabel="kbd_4x4.c" index="2">
 <position info="not_deleted" x="0" y="0"/>
 </item>
 </navigationHistory>
@@ -428,47 +474,45 @@
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="kbd_4x4.c" tooltip="TestIO/kbd/kbd_4x4.c">
 <persistable path="/TestIO/kbd/kbd_4x4.c"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="kbd_4x4.h" tooltip="TestIO/kbd/kbd_4x4.h">
-<persistable path="/TestIO/kbd/kbd_4x4.h"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="main.c" tooltip="TestIO/main.c">
+<persistable path="/TestIO/main.c"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="stm32f4xx_rcc.c" tooltip="eeprom/cmsis_lib/source/stm32f4xx_rcc.c">
-<persistable path="/eeprom/cmsis_lib/source/stm32f4xx_rcc.c"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="eeprom.c" tooltip="TestIO/eeprom/eeprom.c">
+<persistable path="/TestIO/eeprom/eeprom.c"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="stm32f4xx_gpio.h" tooltip="eeprom/cmsis_lib/include/stm32f4xx_gpio.h">
-<persistable path="/eeprom/cmsis_lib/include/stm32f4xx_gpio.h"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="includy.h" tooltip="TestIO/includy.h">
+<persistable path="/TestIO/includy.h"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="main.h" tooltip="eeprom/main.h">
-<persistable path="/eeprom/main.h"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="stm32f4xx_i2c.c" tooltip="eeprom/cmsis_lib/source/stm32f4xx_i2c.c">
-<persistable path="/eeprom/cmsis_lib/source/stm32f4xx_i2c.c"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="main.c" tooltip="eeprom/main.c">
-<persistable path="/eeprom/main.c"/>
+<file factoryID="org.coocox.component.ui.editors.repository.RepositoryElementFactory" id="org.coocox.builder.ui.editors.repository.RepositoryBrowser" name="Repository" tooltip="Repository">
+<persistable>&#x0A;<subPage/>
+</persistable>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="lcd_hd44780.c" tooltip="TestIO/lcd/lcd_hd44780.c">
 <persistable path="/TestIO/lcd/lcd_hd44780.c"/>
 </file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="stm32f4xx_gpio.c" tooltip="TestIO/cmsis_lib/source/stm32f4xx_gpio.c">
+<persistable path="/TestIO/cmsis_lib/source/stm32f4xx_gpio.c"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="eeprom.h" tooltip="TestIO/eeprom/eeprom.h">
+<persistable path="/TestIO/eeprom/eeprom.h"/>
+</file>
+<file factoryID="org.eclipse.cdt.ui.ExternalEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="stdint.h" tooltip="C:\Program Files (x86)\GNU Tools ARM Embedded\4.7 2013q3\arm-none-eabi\include\stdint.h">
+<persistable path="C:\Program Files (x86)\GNU Tools ARM Embedded\4.7 2013q3\arm-none-eabi\include\stdint.h" project="TestIO"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="delay.h" tooltip="TestIO/delay/delay.h">
+<persistable path="/TestIO/delay/delay.h"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="IOToggle.c" tooltip="TestIO/example/IOToggle.c">
+<persistable path="/TestIO/example/IOToggle.c"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="kbd_4x4.h" tooltip="TestIO/kbd/kbd_4x4.h">
+<persistable path="/TestIO/kbd/kbd_4x4.h"/>
+</file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="lcd_hd44780.h" tooltip="TestIO/lcd/lcd_hd44780.h">
 <persistable path="/TestIO/lcd/lcd_hd44780.h"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="main.c" tooltip="j/main.c">
-<persistable path="/j/main.c"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="startup_stm32f4xx.c" tooltip="WyswietlaczLCD/cmsis_boot/startup/startup_stm32f4xx.c">
-<persistable path="/WyswietlaczLCD/cmsis_boot/startup/startup_stm32f4xx.c"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="core_cm4.h" tooltip="WyswietlaczLCD/cmsis/core_cm4.h">
-<persistable path="/WyswietlaczLCD/cmsis/core_cm4.h"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="system_stm32f4xx.c" tooltip="Lab3/cmsis_boot/system_stm32f4xx.c">
-<persistable path="/Lab3/cmsis_boot/system_stm32f4xx.c"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="main.c" tooltip="WyswietlaczLCD/main.c">
-<persistable path="/WyswietlaczLCD/main.c"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="hd44780.h" tooltip="ijojo/hd44780.h">
-<persistable path="/ijojo/hd44780.h"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="delay.c" tooltip="TestIO/delay/delay.c">
+<persistable path="/TestIO/delay/delay.c"/>
 </file>
 </mruList>
 </workbench>

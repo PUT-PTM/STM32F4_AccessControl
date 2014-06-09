@@ -1,3 +1,6 @@
+#ifndef  lcd_c
+#define lcd_c
+
 //******************************************************************************
 //    THE SOFTWARE INCLUDED IN THIS FILE IS FOR GUIDANCE ONLY.
 //    AUTHOR SHALL NOT BE HELD LIABLE FOR ANY DIRECT, INDIRECT
@@ -9,10 +12,9 @@
 //    ZA ZADNE EWENTUALNE, BEZPOSREDNIE I POSREDNIE SZKODY
 //    WYNIKLE Z JEGO WYKORZYSTANIA.
 //******************************************************************************
-#include "delay.h"
-#include "lcd_hd44780.h"
-#include "stm32f4xx_gpio.h"
 
+
+#include "lcd_hd44780.h"
 #define LCD_DELAY_MS(a)	delay_ms(a)	//dead loop delay
 
 #define LCD_GPIO GPIOE
@@ -359,3 +361,4 @@ void lcd_test(void)
 
 }
 //-----------------------------------------------------------------------------
+#endif

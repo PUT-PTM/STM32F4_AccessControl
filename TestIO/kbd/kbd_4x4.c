@@ -1,3 +1,6 @@
+#ifndef kbd_c
+#define kbd_c
+#include "kbd_4x4.h"
 //******************************************************************************
 //    THE SOFTWARE INCLUDED IN THIS FILE IS FOR GUIDANCE ONLY.
 //    AUTHOR SHALL NOT BE HELD LIABLE FOR ANY DIRECT, INDIRECT
@@ -10,9 +13,7 @@
 //    WYNIKLE Z JEGO WYKORZYSTANIA.
 //******************************************************************************
 
-#include "kbd_4x4.h"
-#include "delay.h"
-#include "stm32f4xx_gpio.h"
+
 
 // z³acze C1,C2,C3,C4,R1,R2,R3,R4
 
@@ -27,6 +28,9 @@
 #define KBD_R2 GPIO_Pin_4  //4
 #define KBD_R3 GPIO_Pin_5  //5
 #define KBD_R4 GPIO_Pin_6  //6
+
+#define BEEPER GPIO_Pin_7   // sterowanie beeperem
+#define ZAMEK1 GPIO_Pin_15  // sterowanie zamkiem nr 1 przekaŸnik nr 1
                            //Keys mapping - keys ASCII codes
 #define KBD_R1C1 0x31 //1
 #define KBD_R1C2 0x32 //2
@@ -45,8 +49,8 @@
 
 #define KBD_R4C1 0x2A //*
 #define KBD_R4C2 0x30 //0
-#define KBD_R4C4 0x44 //D
 #define KBD_R4C3 0x23 //#
+#define KBD_R4C4 0x44 //D
 
 const char keyMap[4][4]={{KBD_R1C1, KBD_R1C2, KBD_R1C3, KBD_R1C4},
                          {KBD_R2C1, KBD_R2C2, KBD_R2C3, KBD_R2C4},
@@ -61,7 +65,7 @@ void KBD_Init(void)
 {
   GPIO_InitTypeDef  GPIO_InitStructure; 
 
-  GPIO_InitStructure.GPIO_Pin = KBD_R1 | KBD_R2 | KBD_R3 | KBD_R4;
+  GPIO_InitStructure.GPIO_Pin = KBD_R1 | KBD_R2 | KBD_R3 | KBD_R4 | BEEPER | ZAMEK1;
  	GPIO_InitStructure.GPIO_Speed =  GPIO_Speed_50MHz;
 	GPIO_InitStructure.GPIO_Mode = GPIO_Mode_OUT;
 	GPIO_InitStructure.GPIO_OType = GPIO_OType_PP;
@@ -74,7 +78,38 @@ void KBD_Init(void)
   GPIO_InitStructure.GPIO_PuPd = GPIO_PuPd_UP;
   GPIO_Init(KBD_Cols, &GPIO_InitStructure);
 
-  GPIO_SetBits(KBD_Cols, KBD_C1 | KBD_C2 | KBD_C3 | KBD_C4);
+  GPIO_SetBits(KBD_Cols, KBD_C1 | KBD_C2 | KBD_C3 | KBD_C4 | BEEPER );
+  GPIOE->BSRRL = ZAMEK1;  // ustawia na 1 ¿eby zamek by³ wy³¹czony
+}
+void Beep_KBD(void)
+{
+	short i;
+	for(i=0;i<70;i++) {
+		GPIOE->BSRRH = BEEPER;
+		delay_x10us(30);
+		GPIOE->BSRRL = BEEPER;
+		delay_x10us(30);
+	}
+	GPIOE->BSRRH = BEEPER;   // ustawia pin na GND
+}
+
+void Beep(void)
+{
+	short i;
+	for(i=0;i<150;i++) {
+		GPIOE->BSRRH = BEEPER;
+		delay_x10us(30);
+		GPIOE->BSRRL = BEEPER;
+		delay_x10us(30);
+	}
+	GPIOE->BSRRH = BEEPER;   // ustawia pin na GND
+}
+
+void Zamek1_On(void)
+{
+	GPIOE->BSRRH = ZAMEK1;
+	delay_ms(100);
+	GPIOE->BSRRL = ZAMEK1;
 }
 
 unsigned char KBD_ReadKey(void)
@@ -91,6 +126,8 @@ unsigned char KBD_ReadKey(void)
     while (c<4) {
       if (GPIO_ReadInputDataBit(KBD_Cols, GPIOCols[c])==0){  //check columns
         pressedKey=keyMap[r][c];                          //if column active - find key value 
+        Beep_KBD();///IT
+        while (GPIO_ReadInputDataBit(KBD_Cols, GPIOCols[c])==0) {}
         delay_ms(1);
         //GPIO_WriteBit(KBD_GPIO, GPIORows[r], SET);          //deactivate row
         KBD_Rows->BSRRL = GPIORows[r];
@@ -106,3 +143,4 @@ unsigned char KBD_ReadKey(void)
   //pressedKey = 0x2a;
   return pressedKey;                                      //return key ASCII value
 }
+#endif

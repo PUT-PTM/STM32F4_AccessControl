@@ -1,17 +1,19 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <history>
-   <processor signature="4.7.4 -mcpu=cortex-m4 -mthumb -g -nostartfiles -flto -Map=TestIO.map -O0 --gc-sections --entry=main -LC:\CooCox\CoIDE\configuration\ProgramData\TestIO -TC:\CooCox\CoIDE\configuration\ProgramData\TestIO/arm-gcc-link.ld -g">
-      <target file="TestIO.elf" lastModified="1460b0334c5">
-         <source file="..\obj\delay.o" lastModified="1460b032566"/>
-         <source file="..\obj\startup_stm32f4xx.o" lastModified="1460b03260c"/>
-         <source file="..\obj\main.o" lastModified="1460b032715"/>
-         <source file="..\obj\stm32f4xx_rcc.o" lastModified="1460b0328a7"/>
-         <source file="..\obj\kbd_4x4.o" lastModified="1460b032947"/>
-         <source file="..\obj\lcd_hd44780.o" lastModified="1460b032add"/>
-         <source file="..\obj\stm32f4xx_gpio.o" lastModified="1460b032b9f"/>
-         <source file="..\obj\system_stm32f4xx.o" lastModified="1460b032c70"/>
-         <source file="..\obj\IOToggle.o" lastModified="1460b032d5d"/>
-         <source file="..\obj\misc.o" lastModified="1460b032e28"/>
+   <processor signature="4.7.4 -mcpu=cortex-m4 -mthumb -g -nostartfiles -Map=TestIO.map -O0 --gc-sections -LC:\CooCox\CoIDE\configuration\ProgramData\TestIO -TC:\CooCox\CoIDE\configuration\ProgramData\TestIO/arm-gcc-link.ld -g">
+      <target file="TestIO.elf" lastModified="14681ffad8a">
+         <source file="..\obj\delay.o" lastModified="14681ff9a47"/>
+         <source file="..\obj\startup_stm32f4xx.o" lastModified="14681ff9ad6"/>
+         <source file="..\obj\main.o" lastModified="14681ff9bb8"/>
+         <source file="..\obj\stm32f4xx_rcc.o" lastModified="14681ff9ccf"/>
+         <source file="..\obj\kbd_4x4.o" lastModified="14681ff9dc3"/>
+         <source file="..\obj\lcd_hd44780.o" lastModified="14681ffa03c"/>
+         <source file="..\obj\stm32f4xx_gpio.o" lastModified="14681ffa238"/>
+         <source file="..\obj\system_stm32f4xx.o" lastModified="14681ffa3a7"/>
+         <source file="..\obj\IOToggle.o" lastModified="14681ffa4da"/>
+         <source file="..\obj\stm32f4xx_i2c.o" lastModified="14681ffa6d2"/>
+         <source file="..\obj\misc.o" lastModified="14681ffa810"/>
+         <source file="..\obj\eeprom.o" lastModified="14681ffa9f9"/>
       </target>
    </processor>
 </history>

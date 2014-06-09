@@ -1,4 +1,6 @@
-#include "stm32f4xx.h"
+#ifndef delay_c
+#define delay_c
+
 #include "delay.h"
 
 static inline void delay_us_core(void);
@@ -29,6 +31,16 @@ void delay_1ms(void)
 	  }
 }
 
+void delay_x10us(__IO uint32_t nCount)
+{
+  //uint32_t nCount;
+  //nCount=9;
+  while(nCount--)
+  {
+	  delay_10us();
+  }
+}
+
 void delay_10us(void)
 {
   uint32_t nCount;
@@ -44,3 +56,4 @@ static inline void delay_us_core(void)
 	//while(i--) asm volatile("nop"::);
 	asm volatile("nop"::);
 }
+#endif

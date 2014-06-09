@@ -1,3 +1,6 @@
+#ifndef IOToggle_h
+#define IOToggle_h
+
 /* Includes ------------------------------------------------------------------*/
 #include "stm32f4xx.h"
 #include "stm32f4xx_gpio.h"
@@ -103,3 +106,4 @@ void Delay(__IO uint32_t nCount)
   */ 
 
 /******************* (C) COPYRIGHT 2011 STMicroelectronics *****END OF FILE****/
+#endif

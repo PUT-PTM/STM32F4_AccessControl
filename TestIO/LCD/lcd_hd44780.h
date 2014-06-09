@@ -1,3 +1,5 @@
+#ifndef  lcd_h
+#define lcd_h
 //******************************************************************************
 //    THE SOFTWARE INCLUDED IN THIS FILE IS FOR GUIDANCE ONLY.
 //    AUTHOR SHALL NOT BE HELD LIABLE FOR ANY DIRECT, INDIRECT
@@ -9,6 +11,10 @@
 //    ZA ZADNE EWENTUALNE, BEZPOSREDNIE I POSREDNIE SZKODY
 //    WYNIKLE Z JEGO WYKORZYSTANIA.
 //******************************************************************************
+
+
+#include "delay.h"
+#include "stm32f4xx_gpio.h"
 
 void lcdInit(void);
 void lcdHex(short val);
@@ -60,3 +66,6 @@ void LCD_GoTo(unsigned char x, unsigned char y);
 void LCD_WriteBinary(unsigned int var, unsigned char bitCount);
 void LCD_SetUserChar (unsigned char chrNum, unsigned char n, const unsigned char *p);
 void lcd_test(void);
+
+
+#endif
